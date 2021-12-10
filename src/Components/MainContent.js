@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent = ({children}) => {
     return (
-        <div>
+        <div style={{minHeight: "94vh"}}>
             {children}
         </div>
     );
