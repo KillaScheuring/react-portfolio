@@ -8,7 +8,7 @@ const MainNav = () => {
             <NavStart>
                 <NavItem to={"/"} title={"Home"}/>
                 <NavDropdown to={"/about"} title={"About"}>
-                    <NavItem to={"/about/me"} title={"Resume"}/>
+                    <NavItem to={"/about/resume"} title={"Resume"}/>
                     <NavItem to={"/about/projects"} title={"Projects"}/>
                 </NavDropdown>
                 <NavDropdown to={"/projects"} title={"Projects"}>

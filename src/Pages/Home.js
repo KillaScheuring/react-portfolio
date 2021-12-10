@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import Breadcrumbs from "../Components/Breadcrumbs";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Portfolio - Home"
+    }, [])
     return (
-        <div>
-            This is home, yes, "home"
-        </div>
+        <>
+            <Breadcrumbs
+                tabInfo={[
+                    ["Home", "active"]
+                ]}
+            />
+        </>
     );
 };
 

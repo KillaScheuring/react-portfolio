@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ItemWithHeader = ({title, text}) => {
+const ItemWithHeader = ({title, text, ...rest}) => {
     return (
-        <div>
+        <div {...rest}>
             <div>
                 <h6>{title}</h6>
             </div>

@@ -4,12 +4,12 @@ import ItemWithHeader from "./ItemWithHeader";
 
 export const Footer = ({children}) => {
     return (
-        <footer className={"footer"} style={{
+        <footer className={"footer has-background-dark"} style={{
             width: "100%",
             position: "absolute",
-            bottom: "0px",
-            left: "0px",
-            textAlign: "center",
+            height: '10vh',
+            bottom: 0,
+            left: 0,
             padding: 0
         }}>
             {children}
@@ -19,15 +19,24 @@ export const Footer = ({children}) => {
 
 const Contact = () => {
     return (
-        <div className={"columns"} align={"center"} style={{marginLeft: "15vw", marginRight: "15vw", width: "80vw"}}>
+        <div
+            className={"columns has-text-white"}
+            align={"center"}
+            style={{
+                marginLeft: "15vw",
+                marginRight: "15vw",
+                width: "80vw",
+                height: '5vh'
+            }}
+        >
             <div className={"column"}>
-                <NavItem title={<ItemWithHeader title={"Email"} text={"killashandra@sylvia.com"}/>}/>
+                <NavItem title={<ItemWithHeader className={"has-text-white"} title={"Email"} text={"killashandra@sylvia.com"}/>}/>
             </div>
             <div className={"column"}>
-                <NavItem title={<ItemWithHeader title={"LinkedIn"} text={"Killashandra Scheuring"}/>}/>
+                <NavItem title={<ItemWithHeader className={"has-text-white"} title={"LinkedIn"} text={"Killashandra Scheuring"}/>}/>
             </div>
             <div className={"column"}>
-                <NavItem title={<ItemWithHeader title={"Location"} text={"Kansas City Metro Area"}/>}/>
+                <NavItem title={<ItemWithHeader className={"has-text-white"} title={"Location"} text={"Kansas City Metro Area"}/>}/>
             </div>
         </div>
     )
