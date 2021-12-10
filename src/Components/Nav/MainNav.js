@@ -1,5 +1,6 @@
 import React from 'react';
-import {NavBar, NavDivider, NavDropdown, NavItem, NavStart} from "./NavComponents";
+import {NavBar, NavDivider, NavDropdown, NavEnd, NavItem, NavStart} from "./NavComponents";
+import ItemWithHeader from "../ItemWithHeader";
 
 const MainNav = () => {
     return (

@@ -9,9 +9,10 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import MainNav from "./Components/Nav/MainNav";
 import MainContent from "./Components/MainContent";
+import Contact, {Footer} from "./Components/Contact";
 
 ReactDOM.render(
-    <div style={{paddingLeft: "1em"}}>
+    <>
         <Router>
             <NavBar>
                 <Routes>
@@ -26,8 +27,14 @@ ReactDOM.render(
                     <Route path="*" element={<div>Not Found</div>}/>
                 </Routes>
             </MainContent>
+
+            <Footer>
+                <Routes>
+                    <Route path="*" element={<Contact/>}/>
+                </Routes>
+            </Footer>
         </Router>
-    </div>,
+    </>,
     document.getElementById('root')
 );
 

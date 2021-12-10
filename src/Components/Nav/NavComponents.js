@@ -1,26 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-export const NavBrand = () => {
-    return (
-        <div className={"navbar-brand"}>
-            <Link className={"navbar-item"} to={"/"}>
-                <img src={"https://bulma.io/images/bulma-logo.png"} alt={"Logo"} width={112} height={28}/>
-            </Link>
-            <a role={"button"} className={"navbar-burger"}>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-    )
-}
-
 export const NavItem = ({title, to}) => {
-    return (
+    if (to) return (
         <Link className={"navbar-item"} to={to}>
             {title}
         </Link>
+    )
+    return (
+        <div className={"navbar-item"}>
+            {title}
+        </div>
     )
 }
 
@@ -32,7 +22,7 @@ export const NavDropdown = ({title, to, children}) => {
             <Link className={"navbar-link"} to={to}>
                 {title}
             </Link>
-            <div className="navbar-dropdown">
+            <div className="navbar-dropdown is-black">
                 {children}
             </div>
         </div>
@@ -57,8 +47,7 @@ export const NavEnd = ({children}) => {
 
 export const NavBar = ({children}) => {
     return (
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-            <NavBrand/>
+        <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" className="navbar-menu">
                 {children}
             </div>

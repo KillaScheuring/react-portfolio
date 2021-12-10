@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent = ({children}) => {
     return (
-        <div>
+        <div style={{padding: "1em"}}>
             {children}
         </div>
     );
