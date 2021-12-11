@@ -6,10 +6,9 @@ export const Footer = ({children}) => {
     return (
         <footer className={"footer has-background-dark"} style={{
             width: "100%",
-            position: "absolute",
+            position: "relative",
             height: '10vh',
-            bottom: 0,
-            left: 0,
+            marginTop: '-10vh',
             padding: 0
         }}>
             {children}
