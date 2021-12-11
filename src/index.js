@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import './index.css';
+import './index.scss';
 import 'bulma/css/bulma.min.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from "./Components/Nav/NavBar";
