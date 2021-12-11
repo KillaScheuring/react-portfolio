@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent = ({children}) => {
     return (
-        <div style={{minHeight: "94vh"}}>
+        <div className={"main-content"}>
             {children}
         </div>
     );

@@ -9,7 +9,6 @@ import About from "./Pages/About/About";
 import Home from "./Pages/Home";
 import MainNav from "./Components/Nav/MainNav";
 import MainContent from "./Components/MainContent";
-import Contact, {Footer} from "./Components/Contact";
 import PokemonQuiz from "./Pages/Projects/PokemonQuiz/PokemonQuiz";
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/About/Resume";
@@ -20,7 +19,7 @@ import CovidMapWorld from "./Pages/Projects/CovidMapWorld/CovidMapWorld";
 import StarWarsQuiz from "./Pages/Projects/StarWarsQuiz/StarWarsQuiz";
 
 ReactDOM.render(
-    <>
+    <div style={{overflow: "hidden", "-ms-overflow-style": "hidden", "-webkit-scrollbar": "hidden"}}>
         <Router>
             <NavBar>
                 <Routes>
@@ -42,13 +41,8 @@ ReactDOM.render(
                     <Route path="*" element={<div>Not Found</div>}/>
                 </Routes>
             </MainContent>
-            <Footer>
-                <Routes>
-                    <Route path="*" element={<Contact/>}/>
-                </Routes>
-            </Footer>
         </Router>
-    </>,
+    </div>,
     document.getElementById('root')
 );
 
