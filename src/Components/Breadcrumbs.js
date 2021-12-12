@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const Breadcrumbs = ({tabInfo}) => (
-    <nav className={"breadcrumb has-background-light p-2"} aria-label={"breadcrumbs"}>
+    <nav className={"breadcrumb has-background-light p-2 m-0"} aria-label={"breadcrumbs"}>
         <ul>
             {tabInfo.map(tab => tab[1] === "active" ? (
                 <li className={"is-active"}>

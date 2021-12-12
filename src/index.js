@@ -19,7 +19,7 @@ import CovidMapWorld from "./Pages/Projects/CovidMapWorld/CovidMapWorld";
 import StarWarsQuiz from "./Pages/Projects/StarWarsQuiz/StarWarsQuiz";
 
 ReactDOM.render(
-    <div style={{overflow: "hidden", "-ms-overflow-style": "hidden", "-webkit-scrollbar": "hidden"}}>
+    <>
         <Router>
             <NavBar>
                 <Routes>
@@ -42,7 +42,7 @@ ReactDOM.render(
                 </Routes>
             </MainContent>
         </Router>
-    </div>,
+    </>,
     document.getElementById('root')
 );
 

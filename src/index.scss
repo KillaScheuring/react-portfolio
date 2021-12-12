@@ -15,6 +15,15 @@ code {
   monospace;
 }
 
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 ::-webkit-scrollbar {
   width: 0;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
@@ -35,3 +44,31 @@ code {
   background: $grey-light;
   border-radius: 10px;
 }
+
+.pokemon-quiz-header .title {
+  color: #ffcb05;
+  font-weight: 900;
+  font-size: 50px;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #2a75bb;
+}
+.pokemon-quiz-header .subtitle {
+  color: #3B4CCA;
+}
+
+.tag.pokemon-selected {
+  background: #3B4CCA;
+  color: white;
+}
+
+.tag.pokemon-unselected {
+  background: #3B4CCA55;
+}
+
+.button.pokemon-submit {
+  background: #CC0000;
+  color: white;
+}
+
+
+

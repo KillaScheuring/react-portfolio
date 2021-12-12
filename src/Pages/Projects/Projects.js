@@ -13,7 +13,7 @@ const Projects = () => {
                     ["Projects", "active"]
                 ]}
             />
-            <div className={"pl-3 pr-3"}>
+            <div className={"pl-3 pr-3 mt-3"}>
                 <div className={"columns"}>
                     <ProjectCard
                         title={"Platformer"}
